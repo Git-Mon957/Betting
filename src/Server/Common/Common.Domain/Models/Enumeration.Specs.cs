@@ -19,19 +19,19 @@ public class EnumerationSpecs
         result.Should().BeTrue();
     }
 
-    // [Fact]
-    // public void EnumerationsWithDifferentValuesShouldNotBeEqual()
-    // {
-    //     // Arrange
-    //     var first = TestEnumeration.FirstTest;
-    //     var second = TestEnumeration.SecondTest;
+    [Fact]
+    public void EnumerationsWithDifferentValuesShouldNotBeEqual()
+    {
+        // Arrange
+        var first = TestEnumeration.FirstTest;
+        var second = TestEnumeration.SecondTest;
 
-    //     // Act
-    //     var result = first == second;
+        // Act
+        var result = first == second;
 
-    //     // Arrange
-    //     result.Should().BeFalse();
-    // }
+        // Arrange
+        result.Should().BeFalse();
+    }
 
     private class TestEnumeration : Enumeration
     {
