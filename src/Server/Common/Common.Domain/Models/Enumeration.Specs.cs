@@ -12,8 +12,7 @@ public class EnumerationSpecs
         var first = TestEnumeration.FirstTest;
         var second = TestEnumeration.FirstTest;
 
-        // Act
-        var result = first == second;
+        
 
         // Arrange
         result.Should().BeTrue();
