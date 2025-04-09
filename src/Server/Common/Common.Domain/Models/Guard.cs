@@ -12,7 +12,7 @@ public static class Guard
             return;
         }
 
-        // ThrowException<TException>($"{name} cannot be null or empty.");
+        ThrowException<TException>($"{name} cannot be null or empty.");
     }
 
     public static void ForStringLength<TException>(string value, int minLength, int maxLength, string name = "Value")
