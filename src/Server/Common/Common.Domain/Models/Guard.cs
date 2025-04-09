@@ -25,7 +25,7 @@ public static class Guard
             return;
         }
 
-        ThrowException<TException>($"{name} must have between {minLength} and {maxLength} symbols.");
+        ThrowException<TException>($"{name} must have between {minLength} and {} symbols.");
     }
 
     public static void AgainstOutOfRange<TException>(int number, int min, int max, string name = "Value")
