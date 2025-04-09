@@ -36,7 +36,7 @@ public static class Guard
             return;
         }
 
-        // ThrowException<TException>($"{name} must be between {min} and {max}.");
+        ThrowException<TException>($"{name} must be between {min} and {max}.");
     }
 
     public static void AgainstOutOfRange<TException>(int? number, int min, int max, string name = "Value")
