@@ -12,5 +12,5 @@ public class Image : Entity<int>
 
     public byte[] OriginalContent { get; }
 
-    public byte[] ThumbnailContent { get; }
+    // public byte[] ThumbnailContent { get; }
 }
