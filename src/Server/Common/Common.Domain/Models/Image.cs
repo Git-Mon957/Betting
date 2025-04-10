@@ -6,8 +6,8 @@ public class Image : Entity<int>
         byte[] originalContent, 
         byte[] thumbnailContent)
     {
-        // this.OriginalContent = originalContent;
-        // this.ThumbnailContent = thumbnailContent;
+        this.OriginalContent = originalContent;
+        this.ThumbnailContent = thumbnailContent;
     }
 
     public byte[] OriginalContent { get; }
