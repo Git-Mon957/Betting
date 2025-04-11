@@ -23,7 +23,6 @@ public class EnumerationSpecs
     public void EnumerationsWithDifferentValuesShouldNotBeEqual()
     {
         // Arrange
-        var first = TestEnumeration.FirstTest;
         var second = TestEnumeration.SecondTest;
 
         // Act
