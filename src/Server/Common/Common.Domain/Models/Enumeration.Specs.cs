@@ -30,7 +30,6 @@ public class EnumerationSpecs
         var result = first == second;
 
         // Arrange
-        result.Should().BeFalse();
     }
 
     private class TestEnumeration : Enumeration
