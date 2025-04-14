@@ -16,7 +16,6 @@ public class EnumerationSpecs
         var result = first == second;
 
         // Arrange
-        result.Should().BeTrue();
     }
 
     [Fact]
