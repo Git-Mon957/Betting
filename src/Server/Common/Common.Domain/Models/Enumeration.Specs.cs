@@ -10,7 +10,6 @@ public class EnumerationSpecs
     {
         // Arrange
         var first = TestEnumeration.FirstTest;
-        var second = TestEnumeration.FirstTest;
 
         // Act
         var result = first == second;
