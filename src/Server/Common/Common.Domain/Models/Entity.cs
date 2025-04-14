@@ -38,10 +38,10 @@ public abstract class Entity<TId> : IEntity
             return false;
         }
 
-        // if (this.Id.Equals(default) || other.Id.Equals(default))
-        // {
-        //     return false;
-        // }
+        if (this.Id.Equals(default) || other.Id.Equals(default))
+        {
+            return false;
+        }
 
         return this.Id.Equals(other.Id);
     }
