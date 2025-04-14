@@ -11,6 +11,7 @@ public abstract class Entity<TId> : IEntity
 
     protected Entity() => this.events = new List<IDomainEvent>();
 
+    public TId Id { get; private set; } = default;
 
     public IReadOnlyCollection<IDomainEvent> Events
         => this.events.ToList().AsReadOnly();
