@@ -23,6 +23,7 @@ public class EnumerationSpecs
     {
         // Arrange
         var first = TestEnumeration.FirstTest;
+        var second = TestEnumeration.SecondTest;
 
         // Act
         var result = first == second;
