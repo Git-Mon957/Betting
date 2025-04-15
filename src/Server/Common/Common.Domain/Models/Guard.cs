@@ -44,6 +44,7 @@ public static class Guard
     {
         if (!number.HasValue)
         {
+            return;
         }
 
         AgainstOutOfRange<TException>(number.Value, min, max, name);
