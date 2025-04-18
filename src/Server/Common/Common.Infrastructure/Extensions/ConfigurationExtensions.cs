@@ -19,7 +19,6 @@ public static class ConfigurationExtensions
         var settings = configuration.GetSection(nameof(MessageQueueSettings));
 
         return new MessageQueueSettings(
-            settings.GetValue<string>(nameof(MessageQueueSettings.Host)),
             settings.GetValue<string>(nameof(MessageQueueSettings.UserName)),
             settings.GetValue<string>(nameof(MessageQueueSettings.Password)));
     }
